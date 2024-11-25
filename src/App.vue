@@ -3,8 +3,19 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
+
+<script setup>
+import * as xlsx from 'xlsx'
+import * as echarts from 'echarts'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  console.log(xlsx)
+  console.log(echarts)
+})
+</script>
 
 <style lang="scss">
 #app {
